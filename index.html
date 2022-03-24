@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Beauty</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/darkMode.css" type="text/css">
+</head>
+
+<body id="darkBody">
+    <header class="headerElements" id="header">
+        <h1 id="mainTitle">Ultra Beauty</h1>
+
+        <ul class="filterList" id="filterNav">
+            <li data-tag="Todos" class="filterItem filterActive">Todos</li>
+            <li data-tag="Maquiagem" class="filterItem">Maquiagem</li>
+            <li data-tag="Acessórios" class="filterItem">Acessórios</li>
+            <li data-tag="Limpeza" class="filterItem">Limpeza</li>
+        </ul>
+
+        <span id="darkModeBtn" class="darkModeBtn"></span>
+    </header>
+
+    <div class="content">
+        <main id="mainContainer" class="mainContainer">
+            <ul class="cardsList" id="parentList">
+                <!--<li class="productCard">
+                    <div class="boxIMG">
+                        <img src="./assets/img/batom-maxlove.png" alt="Batom vermelho">
+                    </div>
+                    <div class="boxInfo">
+                        <p>Maquiagem</p>
+                        <h2>Gloss SexLips (cor 101) - Max Love</h2>
+                        <div class="productDescription">
+                            <p>
+                                O óleo labial é uma nova tendência que proporciona cobertura translúcida e hidratação aos lábios sem a pegajosidade do gloss tradicional
+                            </p>
+                        </div>
+                        <p>R&dollar;7,90</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+                </li>-->
+            </ul>
+        </main>
+
+        <aside id="asideContent">
+            <section class="searchProducts">
+                <input id="findInput" type="text" placeholder="Digite aqui sua pesquisa">
+                <button id="searchButton">Pesquisar</button>
+            </section>
+
+            <div class="shoppingCart">
+                <h2>Carrinho de Compras</h2>
+            </div>
+
+            <section class="cartBox">
+                <div class="emptyCart" id="empty">
+                    <h3>Carrinho vazio</h3>
+                    <p>Adicione itens</p>
+                </div>
+                <ul id="cartList">
+                    <!--
+                    <li class="cartItem">
+                        <img src="./assets/img/batom-maxlove.png">
+                        <div class="cartItemInfo">
+                            <h3>Gloss SexLips (cor 101) - Max Love</h3>
+                            <p>R$7,90</p>
+                            <span>Remover produto</span>
+                        </div>
+                    </li>
+                    -->
+                </ul>
+            </section>
+
+
+            <section class="purchaseInfo purchaseInfoHidden" id="purchaseInfo">
+                <p>Quantidade: <span id="amountCart">0</span></p>
+                <p>Total: <span id="priceCart">R$0</span></p>
+            </section>
+
+        </aside>
+
+        <button id="back-to-top" class="back-to-top"><img src="./assets/img/topBtn.png"></button>
+    </div>
+
+
+    <script src="./assets/js/database.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

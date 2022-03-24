@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.headerElements {
+    background-color: #F5F5F5;
+    transition: 0.5s;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerElements h1 {
+    color: #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 1.5rem;
+}
+
+.filterList {
+    display: flex;
+    margin-left: 35.938rem;
+}
+
+.filterList li {
+    color: #333333;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
+    padding: 0.938rem;
+}
+
+.filterList>.filterActive {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+}
+
+.mainContainer {
+    width: 60%;
+    margin: 1.125rem 7.188rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.cardsList {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.productCard {
+    border: 0.125rem solid #F5F5F5;
+    width: 18.75rem;
+    transition: 0.5s;
+    margin-right: 3.125rem;
+    margin-bottom: 1.875rem;
+}
+
+.productCard:hover {
+    border: 0.125rem solid #2E245E;
+}
+
+.boxIMG {
+    background-color: #F5F5F5;
+    text-align: center;
+    width: 100%;
+    height: 9.625rem;
+    transition: 0.5s;
+}
+
+.boxIMG>img {
+    height: 9.625rem;
+}
+
+.boxInfo {
+    height: 51%;
+    padding: 1.25rem 0.938rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.boxInfo>.productCategory {
+    background-color: #2E245E;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0.438rem;
+    margin-bottom: 0.938rem;
+}
+
+.boxInfo h2 {
+    color: #333333;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.938rem;
+}
+
+.productDescription p {
+    color: #828282;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    width: 17.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.boxInfo>p {
+    color: #2E245E;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
+}
+
+.boxInfo button {
+    background-color: #FFFFFF;
+    color: #828282;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-decoration-line: underline;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.boxInfo button:hover {
+    color: #6B54DE;
+}
+
+.searchProducts {
+    text-align: center;
+}
+
+.searchProducts input {
+    background-color: #F5F5F5;
+    color: #828282;
+    border: 0.063rem solid #F5F5F5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    padding: 0.938rem;
+    box-sizing: border-box;
+    margin-top: 1.125rem;
+    margin-right: 0.5rem;
+    width: 20.375rem;
+    height: 3.125rem;
+}
+
+.searchProducts input:focus {
+    border: none;
+    outline: none;
+}
+
+.searchProducts button {
+    background-color: #6B54DE;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 6rem;
+    height: 3.125rem;
+}
+
+.searchProducts button:hover {
+    cursor: pointer;
+}
+
+.shoppingCart {
+    background-color: #6B54DE;
+    width: 100%;
+    height: 4.125rem;
+    margin-top: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoppingCart h2 {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.33rem;
+    line-height: 1.5rem;
+}
+
+.cartBox {
+    background-color: #F5F5F5;
+    padding: 0.625rem;
+    height: 26.5rem;
+    width: 26.25rem;
+    transition: 0.5s;
+    overflow: overlay;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.cartBox::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.cartBox::-webkit-scrollbar-thumb {
+    background-color: #8f8f8f;
+    border-radius: 1.25rem;
+}
+
+.emptyCart {
+    text-align: center;
+    margin-top: 9.375rem;
+}
+
+.emptyCartHidden {
+    display: none;
+}
+
+.emptyCart h3 {
+    color: #333333;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.emptyCart p {
+    color: #828282;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+.cartItem {
+    padding: 0.438rem;
+    margin-bottom: 0.625rem;
+    width: 100%;
+    display: flex;
+}
+
+.cartItem:hover {
+    background-color: #e2e2e2;
+    transition: 0.5s;
+}
+
+.cartItem img {
+    margin-right: 0.5rem;
+}
+
+.cartItemInfo h3 {
+    color: #333333;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.063rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.cartItemInfo p {
+    color: #2E245E;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+.cartItemInfo span {
+    background: none;
+    text-decoration: underline;
+    color: #828282;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    display: flex;
+}
+
+.cartItemInfo span:hover {
+    color: #6B54DE;
+    cursor: pointer;
+}
+
+.purchaseInfo {
+    background-color: #333333;
+    color: white;
+    height: 7.875rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.purchaseInfoHidden {
+    display: none;
+}
+
+.purchaseInfo p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.purchaseInfo p>span {
+    color: #828282;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 3.125rem;
+    right: 4.063rem;
+    background: none;
+    visibility: hidden;
+}
+
+.back-to-top img {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.back-to-top:hover {
+    cursor: pointer;
+}
+
+.visibleButton {
+    visibility: visible;
+}
