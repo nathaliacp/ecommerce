@@ -86,9 +86,11 @@ function searchProducts() {
     const newData = [];
 
     for (let i = 0; i < data.length; i++) {
-        const lowerString = data[i].name.toLowerCase();
-        const upperString = data[i].name.toUpperCase();
-        if (lowerString.includes(input.value) || upperString.includes(input.value)) {
+        const lowerStringData = data[i].name.toLowerCase();
+        const upperStringData = data[i].name.toUpperCase();
+        const lowerStringInput = input.value.toLowerCase();
+        const upperStringInput = input.value.toUpperCase();
+        if (lowerStringData.includes(lowerStringInput) || upperStringData.includes(upperStringInput)) {
             newData.push(data[i]);
         };
     };
